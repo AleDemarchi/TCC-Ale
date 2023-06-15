@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.6/jquery.inputmask.min.js"></script>
+    <title>Merenda Online</title>
+    <script src="https://cdn.tailwindcss.com"></script>        
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="img2_tcc.png">
+    <style>
+        @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap%27); 
+        body{
+            font-family: Montserrat;
+            background-color: white;
+            text-align: center;
+        }
+    </style>
+    </head>
+        <body class="bg-gradient-to-r from-orange-300 via-orange-400 to-orange-500">
+            <div class="container w-screen h-screen flex flex-col justify-center">
+                <h1 class="text-black text-5xl font-bold pt-12 pb-32">
+                    Merenda Online
+                </h1>
+                <div class="bg-white flex flex-col mx-auto mt-0 mb-12 items-center rounded-lg shadow-[0px_10px_50px_orange-400]"> 
+                    <form action="teste.php" c="" method="POST">
+                        <div class=" flex flex-col w-32 h-48 p-32 mb-12 justify-center items-center space-y-6">
+                            <div class="justify-center font-bold flex mt-8">
+                                    <h1>Login</h1>
+                            </div>   
+                                <input type="text" name="nome" class="nome font-black bg-orange-50 w-48 rounded-lg p-1" placeholder="Nome" required="">
+                                <input type="text" name="cpf" class="cpf font-black bg-orange-50 w-48 rounded-lg p-1 h-32" placeholder="CPF" required="">
+                                <input type="password" name="senha" class="senha font-black bg-orange-50 w-48 rounded-lg p-1" placeholder="Senha" required="">
+                                <input type="submit" name="submit" value="Acessar" class="botao bg-orange-500 w-48 h-8 rounded-lg p-1 transition duration-500 ease select-none hover:bg-white focus:outline-none focus:shadow-outline">
+                        </div>
+                    </form>
+                </div>
+                <div class="pt-8 px-18"> 
+                    <a href="formulario.php">
+                        <input type="submit" name="submit" value="Não tenho cadastro" class="botaocadastro bg-orange-500 mt-12 w-48 h-8 rounded-lg transition duration-500 ease select-none hover:bg-white focus:outline-none focus:shadow-outline">
+                    </a> 
+                </div>
+            </div>
+        </body>
+</html>
